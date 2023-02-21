@@ -13,7 +13,6 @@ import java.util.List;
 public class PersonaControlador {
     @Autowired
     PersonaRepositorio personaRepositorio;
-
     @GetMapping("api/persona")
     public ResponseEntity<?> obtenerTodas() {
         List<Persona> result = personaRepositorio.findAll();
